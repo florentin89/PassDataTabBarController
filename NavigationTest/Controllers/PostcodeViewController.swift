@@ -20,6 +20,8 @@ class PostcodeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        print("Selected index: \(self.tabBarController?.selectedIndex ?? -1)")
+        
         if self.tabBarController?.selectedIndex == 1 {
             receivedValueLabel.text = "Value received for Cars: \n" + receivedValueFromHomeScreen
         }
